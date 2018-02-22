@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learning JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script> 
+</head>
+
+<body id="body">
+    <!-- <body onload='showDate()'> // onload is usually attached to the body tag -->
+    <div class="header">
+        <h1 id="heading">JavaScript Fundamentals</h1>
+        
+    </div>
+    <!-- Following div is only for the EVENTS section below around line 215 -->
+    <div class="container">
+
+        <button  onmouseout="clearDate()" onmouseover="showDate()">Show Date</button>
+        <h1 id="time"></h1>
+
+
+
+        <form onsubmit="return validateForm()" method="post" action="#" name="myForm">
+        <!-- <form method="post" action="something.php" name="myForm" onsubmit="return validateForm()"> -->
+            <div>
+                <label>First Name</label>
+                <input type="text" name="firstName" id="firstName" />
+            </div>
+            <br />
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName" id="lastName" />
+            </div>
+            <br />
+            <div>
+                <label>Background</label>
+                <select name="background" id="background" onchange="changeBackground(this)">
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+
+        
+    </div>
+   
+</body>
+
+</html>
